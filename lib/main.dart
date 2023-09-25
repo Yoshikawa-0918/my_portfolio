@@ -8,7 +8,7 @@ import 'package:my_portfolio/keys.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: firebaseConfig);
-  usePathUrlStrategy();
+  setUrlStrategy(PathUrlStrategy());
   runApp(
     const ProviderScope(child: App()),
   );
