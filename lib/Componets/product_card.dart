@@ -67,10 +67,10 @@ class ProductCardState extends State<ProductCard> {
               ),
               const Spacer(),
               HeadLine3(
-                text: widget.product.title!,
+                text: widget.product.title ?? "",
               ),
               Content(
-                text: widget.product.subTitle!,
+                text: widget.product.subTitle ?? "",
                 color: Colors.black54,
               ),
               const Spacer(

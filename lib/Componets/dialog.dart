@@ -51,12 +51,12 @@ class ProductDialogState extends State<ProductDialog> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            HeadLine1(text: widget.product.title!),
-                            HeadLine3(text: widget.product.subTitle!),
+                            HeadLine1(text: widget.product.title ?? ""),
+                            HeadLine3(text: widget.product.subTitle ?? ""),
                             const Divider(
                               color: Colors.grey,
                             ),
-                            Content(text: widget.product.description!),
+                            Content(text: widget.product.description ?? ""),
                             const HeadLine3(text: "URL"),
                             const Divider(
                               color: Colors.grey,
@@ -64,9 +64,9 @@ class ProductDialogState extends State<ProductDialog> {
                             TextButton(
                               onPressed: () {
                                 launchUrl(
-                                    Uri.parse(widget.product.url!.toString()));
+                                    Uri.parse(widget.product.url.toString()));
                               },
-                              child: Text(widget.product.url!),
+                              child: Text(widget.product.url ?? ""),
                             ),
                           ],
                         ),
