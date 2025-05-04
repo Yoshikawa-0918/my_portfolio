@@ -20,7 +20,7 @@ class AboutMe extends StatelessWidget {
               children: <Widget>[
                 Image.asset(
                   'assets/images/profile.png',
-                  scale: 1.8,
+                  scale: 5.8,
                 ),
                 const SizedBox(
                   width: 20,
@@ -39,7 +39,7 @@ class AboutMe extends StatelessWidget {
             const HeadLine1(text: "About me"),
             Image.asset(
               'assets/images/profile.png',
-              scale: 1.8,
+              scale: 5.8,
             ),
             const MyIntroduction(),
           ],
